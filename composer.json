@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "example/math": "^0"
+        "example/math": "^0",
+        "phpmath/bignumber": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.4"

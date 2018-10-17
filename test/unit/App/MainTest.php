@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: boba
- * Date: 10/16/18
- * Time: 9:55 PM
- */
 
 namespace App;
 
@@ -12,10 +6,15 @@ use PHPUnit\Framework\TestCase;
 
 class MainTest extends TestCase
 {
-
-    public function testRun()
+    public function testGimmeABigNumber()
     {
         $obj = new Main();
-        $this->assertEquals(2, $obj->run(0, 0));
+        $this->assertEquals('16546935672486511086530865490.0000000000', $obj->gimmeABigNumber());
+    }
+
+    public function testGimmeALittleNumber()
+    {
+        $obj = new Main();
+        $this->assertEquals(14, $obj->gimmeALittleNumber());
     }
 }
